@@ -48,6 +48,8 @@ public class countOfLinks {
 				System.out.println(str1);
 			}
 		}
+		// count and print only the links present in first column of footer
+		System.out.println("**************All Links present in 1st COLUMN OF footer**************");
 		
 		driver.quit();
 	}
