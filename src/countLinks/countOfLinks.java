@@ -48,8 +48,8 @@ public class countOfLinks {
 				System.out.println(str1);
 			}
 		}
+		
 		driver.quit();
-	
 	}
 
 }
