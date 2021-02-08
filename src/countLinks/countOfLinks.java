@@ -50,7 +50,14 @@ public class countOfLinks {
 		}
 		// count and print only the links present in first column of footer
 		System.out.println("**************All Links present in 1st COLUMN OF footer**************");
-		
+		System.out.println(driver.findElements(By.xpath("//footer//div[@class='row']//div[1]//ul//li//a")).size());
+		List<WebElement> firstFooterCol = driver.findElements(By.xpath("//footer//div[@class='row']//div[1]//ul//li//a"));
+		for(WebElement ele2:firstFooterCol) {
+			String str2 = ele2.getText();
+			if (!str2.isEmpty()) {
+				System.out.println(str2);
+			}
+		}
 		driver.quit();
 	}
 
